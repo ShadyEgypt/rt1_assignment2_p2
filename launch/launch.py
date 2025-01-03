@@ -7,19 +7,16 @@ import os
 
 
 def generate_launch_description():
-    # Path to the gazebo launch file
     gazebo_launch_file = os.path.join(
         FindPackageShare('robot_urdf').find('robot_urdf'),
         'launch',
         'gazebo.launch.py'
     )
 
-    # Include the gazebo launch file
     gazebo_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(gazebo_launch_file)
     )
 
-    # Launch the controller node
     controller_node = Node(
         package='rt1_assignment2_p2',
         executable='controller_node',
