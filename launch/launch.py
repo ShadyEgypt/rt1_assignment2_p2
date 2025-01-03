@@ -5,7 +5,6 @@ from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 import os
 
-
 def generate_launch_description():
     gazebo_launch_file = os.path.join(
         FindPackageShare('robot_urdf').find('robot_urdf'),
