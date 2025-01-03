@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'urdf_robot_controller'
+package_name = 'rt1_assignment2_p2'
 
 setup(
     name=package_name,
@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'controller_node = urdf_robot_controller.controller_node:main',
+            'controller_node = rt1_assignment2_p2.controller_node:main',
         ],
     },
 )

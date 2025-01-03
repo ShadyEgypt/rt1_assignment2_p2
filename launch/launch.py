@@ -21,7 +21,7 @@ def generate_launch_description():
 
     # Launch the controller node
     controller_node = Node(
-        package='urdf_robot_controller',
+        package='rt1_assignment2_p2',
         executable='controller_node',
         name='controller_node',
         output='screen'
